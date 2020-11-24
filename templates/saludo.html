@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>saludo</title>
-</head>
-<body>
+{% extends 'layouts/base.html' %}
+
+{% block title%}
+    Saludo
+{% endblock %}
+
+{% block content %}
+    <h1>En la pagina de sumar</h1>
+    <h2>Con layouts</h2>
     <h1>Hola de parte de {{ name }}</h1>
     <p>Tienes {{ age }} de edad</p>
 
@@ -20,5 +21,5 @@
             <li>{{number}}</li>
         {%- endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}
+
